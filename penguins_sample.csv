@@ -1,0 +1,4 @@
+species,island,bill_length_mm,bill_depth_mm,flipper_length_mm,body_mass_g,sex,year
+Adelie,Torgersen,34.6,21.1,198,4400,male,2007
+Gentoo,Biscoe,54.3,15.7,231,5650,male,2008
+Chinstrap,Dream,55.8,19.8,207,4000,male,2009
