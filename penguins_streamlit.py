@@ -74,3 +74,7 @@ st.write('We used a machine learning model (Decision Tree) to '
 st.image('feature_imp.svg')
 
 
+# Add password to deployed app
+password_guess = st.text_input("What is the Password?") 
+if password_guess != st.secrets["password"]:
+  st.stop()
