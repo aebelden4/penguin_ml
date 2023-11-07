@@ -5,6 +5,13 @@
 import streamlit as st
 import pickle
 
+# Add password to deployed app
+password_guess = st.text_input("What is the Password?") 
+if password_guess != st.secrets["password"]:
+  st.stop()
+
+#password: aebelden4penguin
+
 st.title('Penguin Classifier: A Machine Learning App') 
 
 # Display the image
@@ -72,11 +79,3 @@ st.write('We used a machine learning model (Decision Tree) to '
          'predict the species, the features used in this prediction '
          'are ranked by relative importance below.')
 st.image('feature_imp.svg')
-
-
-# Add password to deployed app
-password_guess = st.text_input("What is the Password?") 
-if password_guess != st.secrets["password"]:
-  st.stop()
-
-#password: aebelden4penguin
