@@ -10,8 +10,6 @@ password_guess = st.text_input("What is the Password?")
 if password_guess != st.secrets["password"]:
   st.stop()
 
-#password: aebelden4penguin
-
 st.title('Penguin Classifier: A Machine Learning App') 
 
 # Display the image
